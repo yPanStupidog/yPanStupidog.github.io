@@ -2,7 +2,7 @@
 # 📖 Educations
 - *2020.09 - 2024.06*, Bachelor, University of Electronic Science and Technology of China & University of Glasgow, Chengdu.
 - *2017.09 - 2020.06*, Shishi High School, Chengdu.
-- *2014.09 - 2017.06*, No.7 Yucai Middle School, chengdu.
+- *2014.09 - 2017.06*, No. 7 Yucai Middle School, chengdu.
 
 # 💬 Invited Talks
 - *2022.02*, Hosted MLNLP seminar \| [\[Video\]](https://www.bilibili.com/video/BV1wF411x7qh)
