@@ -1,4 +1,5 @@
 # 🔥 News
+- *2024.01*: 🎉 Our paper is accepted by ISBI 2025!
 - *2024.08*: 🎉 Start my PhD in UGA!
-- *2024.07*: 🎉 New paper is published in TNNLS
-- *2024.04*: 🎉 New paper is published in Information Fusion
+- *2024.07*: 🎉 Our paper is published in TNNLS!
+- *2024.04*: 🎉 Our paper is published in Information Fusion!
