@@ -1,4 +1,4 @@
-# 📝 Publications
+# 🔥 News
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/pipeline_EchoPulse.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
