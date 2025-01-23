@@ -1,6 +1,6 @@
 
 # 📖 Educations
-- *2024.08 - Continued*, Ph.D., University of Georgia, Athens, USA.
+- *2024.08 - Continued*, Ph.D., The University of Georgia, Athens, USA.
 - *2020.09 - 2024.06*, Bachelor, University of Electronic Science and Technology of China & University of Glasgow, Chengdu, China.
 - *2017.09 - 2020.06*, Shishi High School, Chengdu, China.
 - *2014.09 - 2017.06*, No. 7 Yucai Middle School, Chengdu, China.
