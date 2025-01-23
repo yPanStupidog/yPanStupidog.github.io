@@ -36,8 +36,7 @@ Yuzhong Chen, Zhenxiang Xiao, **Yi Pan**, Lin Zhao, Haixing Dai, Zihao Wu, Chang
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Information Fusion</div><img src='images/maskvit
-.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Information Fusion</div><img src='images/instructvit.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Instruction-ViT: Multi-modal prompts for instruction learning in vision transformer](https://www.sciencedirect.com/science/article/pii/S1566253523005201) \\
