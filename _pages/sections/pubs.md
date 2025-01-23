@@ -1,5 +1,16 @@
 
-# 🔥 Publications
+# 📝 Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISBI 2025</div><img src='images/egs.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[EG-SpikeFormer: Eye-Gaze Guided Transformer on Spiking Neural Networks for Medical Image Analysis](https://arxiv.org/pdf/2410.09674) \\
+**Yi Pan**, Hanqi Jiang, Junhao Chen, Yiwei Li, Huaqin Zhao, Yifan Zhou, Peng Shu, Zihao Wu, Zhengliang Liu, Dajiang Zhu, Xiang Li, Yohannes Abate, Tianming Liu
+
+<!-- [**Project**](https://speechresearch.github.io/fastspeech2/) <strong><span class='show_paper_citations' data='4FA6C0AAAAAJ:LkGwnXOMwfcC'></span></strong> -->
+  - Neuromorphic computing has emerged as a promising energy-efficient alternative to traditional artificial neural networks (ANNs), predominantly utilizing spiking neural networks (SNNs) implemented on neuromorphic hardware. SNNs are more energy-efficient and excel at processing spatio-temporal data than ANNs. Significant advancements have been made in SNN-based convolutional neural networks (CNNs) and Transformer architectures. However, neuromorphic computing for the medical imaging domain remains underexplored. In this study, we introduce EG-SpikeFormer, an SNN architecture tailored for clinical tasks that incorporates eye-gaze data to guide the model's attention to the diagnostically relevant regions in medical images. Our developed approach effectively addresses shortcut learning issues commonly observed in conventional models, especially in scenarios with limited clinical data and high demands for model reliability, generalizability, and transparency. Our EG-SpikeFormer not only demonstrates superior energy efficiency and performance in medical image prediction tasks but also enhances clinical relevance through multi-modal information alignment. By incorporating eye-gaze data, the model improves interpretability and generalization, opening new directions for applying neuromorphic computing in medical image analysis.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025</div><img src='images/pipeline_EchoPulse.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
