@@ -12,4 +12,5 @@ redirect_from:
 
 {% include_relative sections/intro.md %}
 {% include_relative sections/news.md %}
+{% include_relative sections/pubs.md %}
 {% include_relative sections/others.md %}
