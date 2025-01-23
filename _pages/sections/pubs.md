@@ -24,7 +24,7 @@ Yiwei Li, Sekeun Kim, Zihao Wu, Hanqi Jiang, **Yi Pan**, Pengfei Jin, Sifan Song
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TNNLS 2024</div><img src='images/maskvit
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE TNNLS</div><img src='images/maskvit
 .png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -33,5 +33,17 @@ Yuzhong Chen, Zhenxiang Xiao, **Yi Pan**, Lin Zhao, Haixing Dai, Zihao Wu, Chang
 
 <!-- [**Project**](https://speechresearch.github.io/fastspeech2/) <strong><span class='show_paper_citations' data='4FA6C0AAAAAJ:LkGwnXOMwfcC'></span></strong> -->
   - We propose a novel MG-ViT to guide ViT more effectivelyand efficiently learn from the task-relevant prior knowledge for FSL. By simply adding an image patch mask operation and a residual connection to the vanilla ViT, MG-ViT significantly outperforms the general fine-tuning-based methods for FSL. To further improve the efficiency of FSL, we also introduce an effective active learning-based few-shot sample selection method. Our two-stage fine-tuning-based framework could be widely applied to different downstream tasks, such as image classification, object detection, and segmentation in this study. In general, MG-ViT provides a concrete approach toward generalizing data-intensive and large-scale deep learning models for FSL.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Information Fusion</div><img src='images/maskvit
+.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Instruction-ViT: Multi-modal prompts for instruction learning in vision transformer](https://www.sciencedirect.com/science/article/pii/S1566253523005201) \\
+Zhenxiang Xiao, Yuzhong Chen, Junjie Yao, Lu Zhang, Zhengliang Liu, Zihao Wu, Xiaowei Yu, **Yi Pan**, Lin Zhao, Chong Ma, Xinyu Liu, Wei Liu, Xiang Li, Yixuan Yuan, Dinggang Shen, Dajiang Zhu, Dezhong Yao, Tianming Liu, Xi Jiang
+
+<!-- [**Project**](https://speechresearch.github.io/fastspeech2/) <strong><span class='show_paper_citations' data='4FA6C0AAAAAJ:LkGwnXOMwfcC'></span></strong> -->
+  - We propose Instruction-ViT, a simple and effective approach that aligns the input and prompts across distinct modalities. It leverages the pre-trained parameters from ViT-B as the backbone, and combines them with CLIP encoders as well as a flexible head module to complete various downstream tasks including image classification, segmentation, image captioning, and object detection. We show that Instruction-ViT can effectively use uni-modal prompts (e.g., images or texts) as well as multi-modal prompts (e.g., combined image and text features). Experimental results demonstrate that Instruction-ViT enhances the performance of the ViT-based model by incorporating prompts in different modalities, which can further improve the effectiveness of model with fewer parameter training requirements.
 </div>
 </div>
