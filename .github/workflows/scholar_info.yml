@@ -1,41 +1,25 @@
 name: Get Citation Data
 
-on:
-  page_build:
-  schedule:
-    - cron: '0 6 * * 1'
-  workflow_dispatch:
-
-permissions:
-  contents: write
+on: 
+ page_build: 
+ schedule:
+  - cron:  '0 6 * * 1'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.x'
-
-    - name: Install dependencies
+    - uses: actions/checkout@v2
+    - name: Install Reqs
       run: |
-        pip install -r google_scholar_crawler/requirements.txt
-
-    - name: Run crawler
-      env:
-        GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+        sudo apt-get install python3-setuptools
+    - name: Run
       run: |
-        python google_scholar_crawler/main.py
-
-    - name: Commit and push results
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        git config user.name "${GITHUB_ACTOR}"
-        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-        git add assets/results/*.json
-        git commit -m "Updated Citation Data" || echo "No changes to commit"
-        git push origin HEAD:google-scholar-stats
+        cd ./google_scholar_crawler
+        pip3 install -r requirements.txt
+        python3 main.py
+        git add "../assets/results/"
+        git config --global user.email "dwaynepan5277@gmail.com"
+        git config --global user.name "yPanStupidog"
+        git commit -m "* update `date '+%Y-%m-%d %H:%M:%S'`"
+        git push
