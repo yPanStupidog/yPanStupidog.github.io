@@ -1,6 +1,6 @@
 ---
 title:          Bridging Classical and Quantum Computing for Next-Generation Language Models
-date:           2025-08-25 00:01:00 -0400
+date:           2025-08-25 00:02:00 -0400
 selected:       true
 pub:            "AAAI Symposium on Quantum Information & Machine Learning (QIML)"
 # pub_pre:        "Submitted to "
