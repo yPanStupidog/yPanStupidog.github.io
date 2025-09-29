@@ -10,9 +10,9 @@
   "interests": ["Brain-inspired AI", "Artificial General Intelligence"],
   "email_domain": "@uga.edu",
   "homepage": "https://ypanstupidog.github.io/",
-  "citedby": 1482,
+  "citedby": 1503,
   "publications": {},
-  "citedby5y": 1480,
+  "citedby5y": 1501,
   "hindex": 16,
   "hindex5y": 16,
   "i10index": 21,
@@ -20,7 +20,7 @@
   "cites_per_year": {
     "2023": 80,
     "2024": 520,
-    "2025": 882
+    "2025": 849
   },
-  "updated": "2025-09-25 06:45:00"
+  "updated": "2025-09-29 02:26:15"
 }
