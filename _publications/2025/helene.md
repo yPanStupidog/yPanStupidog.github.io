@@ -25,5 +25,4 @@ authors:
   - Jin Lu†
 links:
   Paper: https://openreview.net/pdf?id=1vJXI67bIN
-  Conference: https://2025.emnlp.org/
 ---
