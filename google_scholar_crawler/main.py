@@ -1,10 +1,17 @@
-from scholarly import scholarly
+from scholarly import scholarly, ProxyGenerator
 import jsonpickle
 import json
 from datetime import datetime
 import os
 
+# Set up a proxy generator to avoid being blocked by Google Scholar
+pg = ProxyGenerator()
+# If FreeProxies fails, we still try without proxy as a fallback
+if pg.FreeProxies():
+    scholarly.use_proxy(pg)
+
 scholar_id = os.getenv("GOOGLE_SCHOLAR_ID")
+
 if not scholar_id:
     raise EnvironmentError("GOOGLE_SCHOLAR_ID environment variable is required.")
 
