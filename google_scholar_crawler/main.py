@@ -30,9 +30,10 @@ data = {
     "source": "SERPAPI",
     "name": author.get("name"),
     "affiliation": author.get("affiliations"),
-    "citedby": cited_by.get("table", [{}])[0].get("citations", 0),
-    "hindex": cited_by.get("table", [{}])[1].get("citations", 0),
-    "i10index": cited_by.get("table", [{}])[2].get("citations", 0),
+    "citedby": int(cited_by.get("table", [{}])[0].get("citations", 0)),
+    "hindex": int(cited_by.get("table", [{}])[1].get("citations", 0)),
+    "i10index": int(cited_by.get("table", [{}])[2].get("citations", 0)),
+
     "cites_per_year": {str(d.get("year")): d.get("citations") for d in cited_by.get("graph", [])},
     "updated": str(datetime.now()),
     "publications": {} # Keep field for compatibility
