@@ -1,26 +1,26 @@
 {
   "container_type": "Author",
-  "filled": ["basics", "publications", "indices", "counts"],
+  "filled": [
+    "basics",
+    "indices",
+    "counts"
+  ],
   "scholar_id": "jENRqN8AAAAJ",
-  "source": "AUTHOR_PROFILE_PAGE",
+  "source": "SERPAPI",
   "name": "Yi Pan",
-  "url_picture": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=jENRqN8AAAAJ&citpid=13",
   "affiliation": "University of Georgia",
-  "organization": 14091600928394989845,
-  "interests": ["Brain-inspired AI", "Artificial General Intelligence"],
-  "email_domain": "@uga.edu",
-  "homepage": "https://ypanstupidog.github.io/",
-  "citedby": 1796,
-  "publications": {},
-  "citedby5y": 1796,
-  "hindex": 19,
-  "hindex5y": 19,
-  "i10index": 22,
-  "i10index5y": 22,
+  "citedby": {
+    "all": 1883,
+    "since_2021": 1878
+  },
+  "hindex": 0,
+  "i10index": 0,
   "cites_per_year": {
     "2023": 106,
     "2024": 526,
-    "2025": 1117
+    "2025": 1163,
+    "2026": 71
   },
-  "updated": "2026-01-01 21:00:00"
+  "updated": "2026-01-26 23:43:36.385504",
+  "publications": {}
 }
