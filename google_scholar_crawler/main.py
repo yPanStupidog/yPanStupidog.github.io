@@ -9,10 +9,10 @@ if not scholar_id:
     raise EnvironmentError("GOOGLE_SCHOLAR_ID environment variable is required.")
 
 author: dict = scholarly.search_author_id(scholar_id)
-scholarly.fill(author, sections=['basics', 'indices', 'counts', 'publications'])
+scholarly.fill(author, sections=['basics', 'indices', 'counts'])
 name = author['name']
 author['updated'] = str(datetime.now())
-author['publications'] = {v['author_pub_id']:v for v in author['publications']}
+author['publications'] = {v['author_pub_id']: v for v in author.get('publications', [])}
 print(json.dumps(author, indent=2))
 os.makedirs('results', exist_ok=True)
 with open('results/gs_data.json', 'w') as outfile:
