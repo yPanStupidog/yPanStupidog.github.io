@@ -6,9 +6,13 @@ import os
 
 # Set up a proxy generator to avoid being blocked by Google Scholar
 pg = ProxyGenerator()
-# If FreeProxies fails, we still try without proxy as a fallback
-if pg.FreeProxies():
-    scholarly.use_proxy(pg)
+try:
+    # If FreeProxies fails, we still try without proxy as a fallback
+    if pg.FreeProxies():
+        scholarly.use_proxy(pg)
+except Exception as e:
+    print(f"Proxy setup failed: {e}. Proceeding without proxy.")
+
 
 scholar_id = os.getenv("GOOGLE_SCHOLAR_ID")
 
