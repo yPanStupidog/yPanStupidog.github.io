@@ -19,6 +19,15 @@ params = {
 search = GoogleSearch(params)
 results = search.get_dict()
 
+# Helper function to extract integer from SerpApi citation values
+def to_int(val):
+    if isinstance(val, dict):
+        return int(val.get("all", 0))
+    try:
+        return int(val)
+    except (ValueError, TypeError):
+        return 0
+
 # Extract relevant data
 author = results.get("author", {})
 cited_by = results.get("cited_by", {})
@@ -30,9 +39,9 @@ data = {
     "source": "SERPAPI",
     "name": author.get("name"),
     "affiliation": author.get("affiliations"),
-    "citedby": int(cited_by.get("table", [{}])[0].get("citations", 0)),
-    "hindex": int(cited_by.get("table", [{}])[1].get("citations", 0)),
-    "i10index": int(cited_by.get("table", [{}])[2].get("citations", 0)),
+    "citedby": to_int(cited_by.get("table", [{}])[0].get("citations", 0)),
+    "hindex": to_int(cited_by.get("table", [{}])[1].get("citations", 0)),
+    "i10index": to_int(cited_by.get("table", [{}])[2].get("citations", 0)),
 
     "cites_per_year": {str(d.get("year")): d.get("citations") for d in cited_by.get("graph", [])},
     "updated": str(datetime.now()),
