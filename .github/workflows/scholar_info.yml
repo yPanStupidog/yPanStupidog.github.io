@@ -42,12 +42,12 @@ jobs:
           
       - name: Commit and Push
         run: |
-          # Copy results to assets/results if that's where the site reads from
+          # Copy results to assets/results (where the website reads from)
           mkdir -p assets/results
           cp google_scholar_crawler/results/*.json assets/results/
           
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/results/*.json
+          git add assets/results/*.json google_scholar_crawler/results/*.json
           git commit -m "Update Scholar citations (automated)" || echo "No changes to commit"
           git push origin main
