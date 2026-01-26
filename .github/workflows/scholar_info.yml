@@ -18,26 +18,36 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v3
-      - name: Install Reqs
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-setuptools
-      - name: Run
-        env:
-          GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          
+      - name: Install Dependencies
         run: |
           cd ./google_scholar_crawler
-          pip3 install -r requirements.txt
-          python3 main.py
-          cd ./results
-          git init
-          git config --local user.name "${GITHUB_ACTOR}"
-          git config --local user.email "actions@github.com"
-          git remote add origin "https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
-          git add *.json
-          git commit -m "Updated Citation Data" || echo "No changes to commit"
-          git push origin HEAD:google-scholar-stats --force
+          pip install -r requirements.txt
+          
+      - name: Run Crawler
+        env:
+          GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: |
+          cd ./google_scholar_crawler
+          python main.py
+          
+      - name: Commit and Push
+        run: |
+          # Copy results to assets/results if that's where the site reads from
+          mkdir -p assets/results
+          cp google_scholar_crawler/results/*.json assets/results/
+          
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/results/*.json
+          git commit -m "Update Scholar citations (automated)" || echo "No changes to commit"
+          git push origin main
