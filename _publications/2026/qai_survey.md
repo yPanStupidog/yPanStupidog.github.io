@@ -26,8 +26,8 @@ authors:
   - Wei Zhang
   - Lin Zhao
   - Xiaowei Yu
-  - Yingfeng Wang
-  - Tianming Liu
+  - Yingfeng Wang†
+  - Tianming Liu†
 links:
   Paper: assets/publications/2026/qai_survey.pdf
 ---
