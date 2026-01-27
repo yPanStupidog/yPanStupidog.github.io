@@ -19,5 +19,5 @@ authors:
   - Tianming Liu†
   - Wei Zhang†
 links:
-  Paper: https://arxiv.org/abs/2508.19394
+  Paper: https://doi.org/10.1609/aaaiss.v7i1.36907
 ---

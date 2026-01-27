@@ -23,5 +23,5 @@ authors:
   - Yingfeng Wang†
   - Tianming Liu†
 links:
-  Paper: https://arxiv.org/abs/2508.07026
+  Paper: https://doi.org/10.1609/aaaiss.v7i1.36909
 ---

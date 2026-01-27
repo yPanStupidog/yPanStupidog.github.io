@@ -21,7 +21,7 @@ authors:
   - Zhengliang Liu
   - Lin Zhao
   - Dajiang Zhu
-  - Yingfeng Wang†
+  - Xiang Li
   - Tianming Liu†
 links:
   Paper: assets/publications/2026/medqua.pdf
