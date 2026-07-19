@@ -9,15 +9,15 @@
   "source": "SERPAPI",
   "name": "Yi Pan",
   "affiliation": "University of Georgia",
-  "citedby": 2467,
+  "citedby": 2474,
   "hindex": 0,
   "i10index": 0,
   "cites_per_year": {
-    "2023": 104,
+    "2023": 72,
     "2024": 525,
-    "2025": 1213,
-    "2026": 598
+    "2025": 1214,
+    "2026": 604
   },
-  "updated": "2026-07-18 09:12:27.897799",
+  "updated": "2026-07-19 09:39:40.220719",
   "publications": {}
 }
