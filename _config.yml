@@ -38,3 +38,8 @@ timezone: America/New_York
 collections:
   - publications
   - news
+
+# Keep CV files out of the public site for now.
+exclude:
+  - assets/cv
+  - backups
